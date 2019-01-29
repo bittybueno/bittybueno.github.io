@@ -1,20 +1,79 @@
 <html>
   <head>
-    <title>Your Page Title</title>
+    <title>Page Title</title>
     <link rel="stylesheet" href="phone.css">
   </head>
   <body>
-  	<div id="tab_bar">
-  		<button class="className" id="button1">dialer</button> 
-  		<button class="className" id="button2">contact_list</button> 
-  		<button class="className" id="button3">add_contact</button> 
-  	</div>
-  	<div id="content">
-  		<div id="dialer">dialer</div>
-  		<div id="add_contact">add_contact</div>
-  		<div id="contact_list">contact_list</div>
-  	</div>
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  	<script src="phone.js"></script>
+    <div id="tab_bar">
+      <button class="className" id="button1">dialer</button> 
+      <button class="className" id="button2">contact_list</button> 
+      <button class="className" id="button3">add_contact</button> 
+    </div>
+    <div id="content">
+      <div id="dialer">dialer
+        <form>
+          Dialer<br>
+          <input type="text" name="dialerEntry">
+        </form>
+        <div id="row1">
+          <button class="dialerButton" id="button1">1</button> 
+          <button class="dialerButton" id="button2">2</button> 
+          <button class="dialerButton" id="button3">3</button> 
+        </div>
+        <div id="row2">
+          <button class="dialerButton" id="button1">4</button> 
+          <button class="dialerButton" id="button2">5</button> 
+          <button class="dialerButton" id="button3">6</button> 
+        </div>
+        <div id="row3">
+          <button class="dialerButton" id="button1">7</button> 
+          <button class="dialerButton" id="button2">8</button> 
+          <button class="dialerButton" id="button3">9</button> 
+        </div>
+        <div id="row4">
+          <button class="dialerButton" id="button1">*</button> 
+          <button class="dialerButton" id="button2">0</button> 
+          <button class="dialerButton" id="button3">#</button> 
+        </div>
+        <div id="row5">
+          <button class="dialerButton" id="dialButton">Dial</button> 
+          <button class="dialerButton" id="dialButton">Clear</button> 
+        </div>
+      </div>
+      <div id="add_contact">add_contact
+        <form>
+          Name<br>
+          <input type="text" name="name" placeholder="Jane Smith"><br>
+          Phone Number<br>
+          <input type="text" name="phoneNumber" placeholder="123-456-7890"><br>
+          Email Address<br>
+          <input type="text" name="email" placeholder="jane.smith@colorado.edu">
+        </form>
+        <div id="formButton">
+          <input type="submit" name="submit" value="Add Contact">
+          <input type="submit" name="clear" value="Clear">
+        </div>
+      </div>
+      <div id="contact_list">contact_list
+        <div id="list">
+          <button class="dialerButton" id="button1">1</button> 
+          <button class="dialerButton" id="button2">2</button> 
+          <button class="dialerButton" id="button3">3</button> 
+          <button class="dialerButton" id="button1">1</button> 
+          <button class="dialerButton" id="button2">2</button> 
+          <button class="dialerButton" id="button3">3</button> 
+          <button class="dialerButton" id="button1">1</button> 
+          <button class="dialerButton" id="button2">2</button> 
+          <button class="dialerButton" id="button3">3</button> 
+          <button class="dialerButton" id="button1">1</button> 
+          <button class="dialerButton" id="button2">2</button> 
+          <button class="dialerButton" id="button3">3</button> 
+        </div>
+      </div>
+    </div>
+      
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="phone.js"></script>
   </body>
 </html>
